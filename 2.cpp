@@ -39,11 +39,11 @@ int main()
 		cout << endl;
 	}
 	
-	for(int i=0;i<cols;i++)
+	for(int i=0;i<rows;i++)
 	{
-		int z=mas[0][i];
-		mas[0][i]=mas[rows-1][i];
-		mas[rows-1][i]=z;
+		int z=mas[i][0];
+		mas[i][0]=mas[i][cols-1];
+		mas[i][cols-1]=z;
 	}
 	
 	printf("\n\n\n\n");
